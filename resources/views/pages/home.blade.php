@@ -876,3 +876,6 @@
     <!--/ Data Tables -->
   </div>
 @endsection
+@push('page-js')
+    <script src="{{ asset("/assets/js/dashboards-analytics.js") }}"></script>
+@endpush

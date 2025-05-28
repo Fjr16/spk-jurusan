@@ -91,30 +91,7 @@
               <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
             </a>
           </li>
-          <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-              <div data-i18n="Analytics">Analytics</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-ecommerce-dashboard.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="eCommerce">eCommerce</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-logistics-dashboard.html"
-              target="_blank"
-              class="menu-link">
-              <div data-i18n="Logistics">Logistics</div>
-              <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-            </a>
-          </li>
-          <li class="menu-item">
+          {{-- <li class="menu-item">
             <a
               href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-academy-dashboard.html"
               target="_blank"
@@ -122,12 +99,12 @@
               <div data-i18n="Academy">Academy</div>
               <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </li>
 
       <!-- Layouts -->
-      <li class="menu-item">
+      {{-- <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons ri-layout-2-line"></i>
           <div data-i18n="Layouts">Layouts</div>
@@ -160,54 +137,42 @@
             </a>
           </li>
         </ul>
-      </li>
-
-      <!-- Front Pages -->
-      <li class="menu-item">
+      </li> --}}
+      {{-- Master data --}}
+      <li class="menu-item open">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons ri-file-copy-line"></i>
-          <div data-i18n="Front Pages">Front Pages</div>
-          <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+          <i class="menu-icon tf-icons ri-layout-left-line"></i>
+          <div data-i18n="Account Settings">Master Data</div>
         </a>
         <ul class="menu-sub">
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/front-pages/landing-page.html"
-              class="menu-link"
-              target="_blank">
-              <div data-i18n="Landing">Landing</div>
+          <li class="menu-item {{ $title === 'Siswa' ? 'active' : '' }}">
+            <a href="{{ route('student/create') }}" class="menu-link">
+              <div data-i18n="siswa">Siswa</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/front-pages/pricing-page.html"
-              class="menu-link"
-              target="_blank">
-              <div data-i18n="Pricing">Pricing</div>
+          <li class="menu-item {{ $title === 'Jurusan' ? 'active' : '' }}">
+            <a href="" class="menu-link">
+              <div data-i18n="jurusan">Jurusan</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/front-pages/payment-page.html"
-              class="menu-link"
-              target="_blank">
-              <div data-i18n="Payment">Payment</div>
+          <li class="menu-item {{ $title === 'User' ? 'active' : '' }}">
+            <a href="" class="menu-link">
+              <div data-i18n="user">User</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/front-pages/checkout-page.html"
-              class="menu-link"
-              target="_blank">
-              <div data-i18n="Checkout">Checkout</div>
+          <li class="menu-item {{ $title === 'Kriteria' ? 'active' : '' }}">
+            <a href="" class="menu-link">
+              <div data-i18n="kriteria">Kriteria</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a
-              href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/front-pages/help-center-landing.html"
-              class="menu-link"
-              target="_blank">
-              <div data-i18n="Help Center">Help Center</div>
+          <li class="menu-item {{ $title === 'Gap Convertion' ? 'active' : '' }}">
+            <a href="" class="menu-link">
+              <div data-i18n="gap-konversi">Konversi Gap</div>
+            </a>
+          </li>
+          <li class="menu-item {{ $title === 'Profile Standard' ? 'active' : '' }}">
+            <a href="" class="menu-link">
+              <div data-i18n="profile-standard">Profile Standard</div>
             </a>
           </li>
         </ul>
@@ -280,8 +245,8 @@
             </a>
           </li>
         </ul>
-      </li>
-      <li class="menu-item">
+      </li> --}}
+      {{-- <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons ri-shield-keyhole-line"></i>
           <div data-i18n="Authentications">Authentications</div>

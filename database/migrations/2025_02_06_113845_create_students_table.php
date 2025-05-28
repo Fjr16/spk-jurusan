@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nisn')->required();
             $table->date('tgl_lahir')->required();
             $table->text('alamat')->required();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
